@@ -1,0 +1,23 @@
+Los regressor son con los que entrenamos cada modelo? -> Sí
+
+El meta-modelo se ejecuta al final con 1 solo modelo y nosotros tenemos que programar el ensamble en sí.
+
+Lo que tenemos que programar es el ensamble en sí, después usamos los csv para entrenarlos y evaluarlos. Dónde dice entrenar un modelo tenemos que llamar al .fit del Regressor.
+
+residuoi es el gradiente, es el error que llevamos hasta el momento actual. 
+
+Mejora adicional -> 25% que sobra usarlo para evaluar
+
+Paralelo explota algunos unas columnas.
+
+Mi conjunto de entrenamiento son los 4 train azules, es mi 100%, cada uno lo enntreno con un 75% de ese 100% (que originalmente era el 75%) y tenemos que probar con el 25% del 75% orignal y me olvido del 25% inicial.
+
+El 25% que me sobra al principio es el que uso para predecir los valores del árbol. 
+
+Función perdida 
+
+Evaluar rendimiento cuadrafo al final -> R2, para cada paso podemos usar el RMSE.
+
+Evaluar 
+
+cross-val-score
