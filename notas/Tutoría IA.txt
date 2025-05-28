@@ -1,3 +1,6 @@
+Ignacio
+------------------------------------
+
 Los regressor son con los que entrenamos cada modelo? -> Sí
 
 El meta-modelo se ejecuta al final con 1 solo modelo y nosotros tenemos que programar el ensamble en sí.
@@ -21,3 +24,25 @@ Evaluar rendimiento cuadrafo al final -> R2, para cada paso podemos usar el RMSE
 Evaluar 
 
 cross-val-score
+
+Emilio
+------------------------------------
+Muestreo con reemplazamiento permite repeticiones, el sin reemplazamientos no tiene repeticiones. 
+Revisar que no venga activo.
+
+Podemos usar funciones como el cross validate, fit y tal, no podemos usar soluciones ya hechas.
+
+Funcion objetivo es el residuo, siempre se calcula como la diferencia del valor real menos la predicción.
+
+Con validación cruzada tenemos el 80% para entrenamiento, 
+luego con el 75%(o el porcentaje que pasen por parámetro) de ese 80% lo usamos para entrenar y 
+el 25%(o el que sea) restante será para el early stopping.
+Tras el paso 3.4 del pseudocódigo.
+
+
+Siempre se entrena con ese 75%(o el que sea), aprovechamos esos datos que sobran para el early stopping. En cada iteración.
+
+En early stopping podemos usar MSE, R^2, error cuadratico, el que queramos.
+
+Para usar el sklearn cross validate habría que heredar BaseStimator y ClassificationMixMix, 
+en nuestro caso un Regressor.
