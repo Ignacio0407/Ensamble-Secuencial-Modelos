@@ -32,7 +32,7 @@ Revisar que no venga activo.
 
 Podemos usar funciones como el cross validate, fit y tal, no podemos usar soluciones ya hechas.
 
-Funcion objetivo es el residuo, siempre se calcula como la diferencia del valor real menos la predicción.
+Función objetivo es el residuo, siempre se calcula como la diferencia del valor real menos la predicción.
 
 Con validación cruzada tenemos el 80% para entrenamiento, 
 luego con el 75%(o el porcentaje que pasen por parámetro) de ese 80% lo usamos para entrenar y 
